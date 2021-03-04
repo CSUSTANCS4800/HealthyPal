@@ -1,4 +1,4 @@
-# HealthyPal - DCS 4800
+# HealthyPal - CS 4800
 
 ### Description
 
