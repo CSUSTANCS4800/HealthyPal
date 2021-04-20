@@ -14,7 +14,7 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/aaaaaaaaaa"/>
+        android:src="@drawable/healthypal"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
