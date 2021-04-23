@@ -9,20 +9,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
 
-<<<<<<< HEAD
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/healthypal_logo"
+        android:background="@drawable/transparent_healthypal_logo"
         android:contentDescription="@string/mainlogo" />
-=======
-<ImageView
-    android:layout_width="150dp"
-    android:layout_height="150dp"
-    android:src="@drawable/healthypal"/>
->>>>>>> d665047e38165c68bbfada161222c026b2d5d6e2
 
 <LinearLayout
 android:layout_width="wrap_content"
@@ -42,19 +36,22 @@ android:background="@drawable/round_edittext" >
     android:layout_height="wrap_content"
     android:id="@+id/et_username"
     android:hint="Enter Username"
-    android:textColor="@android:color/white"
-    android:textColorHint="@android:color/white"
+    android:textColor="@android:color/black"
+    android:textColorHint="@android:color/black"
     android:background="@android:color/transparent"
     />
 
 </LinearLayout>
+
 <LinearLayout
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:padding="10dp"
 android:gravity="center"
 android:layout_marginTop="10dp"
-android:background="@drawable/round_edittext">
+android:background="@drawable/round_edittext"
+
+    >
 
 <ImageView
     android:layout_width="50dp"
@@ -65,7 +62,7 @@ android:background="@drawable/round_edittext">
     android:layout_height="wrap_content"
     android:id="@+id/et_password"
     android:hint="Enter Password"
-    android:textColorHint="@android:color/white"
+    android:textColorHint="@android:color/black"
     android:background="@android:color/transparent"/>
 
 </LinearLayout>
@@ -76,8 +73,8 @@ android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:layout_marginTop="30dp"
 android:background="@drawable/round_button"
-android:text="submit"
-android:textColor="@android:color/white"
+android:text="Login"
+android:textColor="@android:color/black"
 app:backgroundTint="#4CAF50" />
 
 <Button
@@ -87,8 +84,9 @@ android:layout_height="wrap_content"
 android:layout_marginTop="30dp"
 android:background="@drawable/round_button"
 android:text="Sign Up"
-android:textColor="@android:color/white"
+android:textColor="@android:color/black"
 app:backgroundTint="#4CAF50" />
 
-    </LinearLayout>
+
+</LinearLayout>
 

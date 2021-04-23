@@ -6,14 +6,10 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="mainlogo">Mainlogo</string>
-<<<<<<< HEAD
-=======
-
     <string name="back4app_server_url">https://parseapi.back4app.com/</string>
     <string name="back4app_app_id">YOUR_APP_ID</string>
     <string name="back4app_client_key">YOUR_CLIENT_KEY</string>
@@ -23,5 +19,4 @@
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="sign_up">SIGN UP</string>
     <string name="logout">logout</string>
->>>>>>> d665047e38165c68bbfada161222c026b2d5d6e2
 </resources>
