@@ -77,11 +77,18 @@ android:text="Login"
 android:textColor="@android:color/black"
 app:backgroundTint="#4CAF50" />
 
-<Button
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Don't have an account?" />
+
+    <Button
 android:id="@+id/bt_signUpButton"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:layout_marginTop="30dp"
+android:layout_marginTop="5dp"
 android:background="@drawable/round_button"
 android:text="Sign Up"
 android:textColor="@android:color/black"
