@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C3D40"
+    android:fadingEdgeLength="4dp"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="#494A4A"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/dashboard_hamburger"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/hamburger"
+            android:scaleType="centerInside"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:tint="#00FFFFFF"
+            app:srcCompat="@drawable/_dcffd8a2dc04dc4866187bf83a664b4" />
+
+        <TextView
+            android:id="@+id/hp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:width="200dp"
+            android:height="115dp"
+            android:fadingEdge="horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="@string/healthypal"
+            android:textAllCaps="false"
+            android:textColor="#C1D4DD"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/home_logo"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:contentDescription="@string/newlogo"
+            android:fadingEdge="horizontal"
+            android:paddingBottom="10dp"
+            android:scaleType="centerInside"
+            android:scaleX=".8"
+            android:scaleY=".8"
+            app:srcCompat="@drawable/unknown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/hp_bmi_chart"
+            android:layout_width="375dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="#444849"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hp_bmi"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Your BMI: <value>"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/hp_previous_bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Previous BMI: \n <value>, <date>"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:id="@+id/hp_user_info"
+                    android:layout_width="150dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/hp_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Height: <> in"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/hp_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Weight: <> lb"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/hp_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sex: <M/F>"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hp_reminder_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Upcoming Reminders"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="257dp">
+
+            <LinearLayout
+                android:id="@+id/reminder_test"
+                style="@style/hp_reminder">
+
+                <TextView
+                    android:id="@+id/hp_reminder_time"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="04/25/21 9:24 pm"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/hp_reminder_name"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="This is a test reminder, and this is a test title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/hp_reminder_edit"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/editsymbol" />
+
+                <ImageButton
+                    android:id="@+id/hp_reminder_delete"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/deleteicon" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#454647"
+        android:baselineAligned="true"
+        android:minHeight="75dp"
+        android:orientation="horizontal"></LinearLayout>
+
+</LinearLayout>
