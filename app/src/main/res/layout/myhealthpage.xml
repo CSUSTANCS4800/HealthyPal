@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Alejandro Pulido
+creation on 4/22/21 and last updated on 4/25/21-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".myhealth.MyhealthpageActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text = "@string/bmi_calculator"
+        android:textSize="32sp"/>
+
+    <ToggleButton
+        android:id="@+id/toggle_units_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textOff= "@string/imperial_units"
+        android:textOn= "@string/metric_units" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/height_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/height"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/height_cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:hint="@string/cm"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+
+                <EditText
+                    android:id="@+id/height_feet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="3"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/ft"
+                    android:layout_toLeftOf="@+id/mid_view"
+                    android:inputType="numberDecimal"
+                    android:layout_toStartOf="@+id/mid_view"/>
+
+                <View
+                    android:id="@+id/mid_view"
+                    android:layout_width="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="0dp" />
+
+                <EditText
+                    android:id="@+id/height_inches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_toRightOf="@id/mid_view"
+                    android:ems="3"
+                    android:hint="@string/in"
+                    android:inputType="numberDecimal"
+                    android:layout_toEndOf="@id/mid_view" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/weight_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/weight"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/weight_kgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:inputType="numberDecimal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:hint="@string/kg"/>
+
+        <EditText
+            android:id="@+id/weight_lbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:inputType="numberDecimal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:hint="@string/lbs"/>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/calculate"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="6dp"
+        android:id="@+id/results"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:id="@+id/category"
+        android:textSize="30sp"
+        android:textColor="#008000"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/bmi"
+        android:textSize="24sp"/>
+
+</LinearLayout>

@@ -12,9 +12,9 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/healthypal_logo"
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:background="@drawable/transparent_healthypal_logo"
         android:contentDescription="@string/mainlogo" />
 
     <LinearLayout
