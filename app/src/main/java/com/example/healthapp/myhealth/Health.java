@@ -22,7 +22,7 @@ public class Health
 
     public double calculateBMIMetric(double heightCm, double weightKg) //// math formula from find BMI value in Metric units
     {
-        return (weightKg / ((heightCm) * (heightCm))) * 10000;
+        return (weightKg / ((heightCm) * (heightCm)));
     }
 
     public double calculateBMIImperial(double height_feet, double height_inches, double weight_lbs) // math formula from find BMI value in Imperial units
