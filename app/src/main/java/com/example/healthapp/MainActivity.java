@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         passwordEditText=findViewById(R.id.et_password);
         loginButton=findViewById(R.id.bt_submit);
         signUpButton=findViewById(R.id.bt_signUpButton);
+        //setting up buttons that connect to activity_main.xml
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                             }else {
                                 Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_LONG).show();
                             }
+                            //connections login to parse server and see if information is correct
                         }
                     });
                 }
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                             }else {
                                 Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_LONG).show();
                             }
+                            //connections sign up to parse server and see if information is correct
                         }
                     });
                 }
