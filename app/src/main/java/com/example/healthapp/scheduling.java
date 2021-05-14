@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 
+// Moises Ortega scheduling class
 public class scheduling extends AppCompatActivity {
 
     // Declaring views -Moises
@@ -40,7 +41,7 @@ public class scheduling extends AppCompatActivity {
                 if (!title.getText().toString().isEmpty() && !location.getText().toString().isEmpty() && !description
                         .getText().toString().isEmpty()) {
 
-
+                    // Intents connected to INPUT fields to move information from inputs to google calendar -Moises
                     Intent intent = new Intent(Intent.ACTION_EDIT);
                     intent.setData(CalendarContract.Events.CONTENT_URI);
                     intent.putExtra(CalendarContract.Events.TITLE, title.getText().toString());

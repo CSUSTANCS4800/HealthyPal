@@ -25,8 +25,9 @@
         android:theme="@style/Theme.HealthApp">
 <!--        <activity android:name=".scheduling"></activity>-->
         <activity android:name=".UserActivity" />
+        <activity android:name=".scheduling" />
         <activity
-            android:name=".scheduling"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.HealthApp.NoActionBar">
             <intent-filter>
