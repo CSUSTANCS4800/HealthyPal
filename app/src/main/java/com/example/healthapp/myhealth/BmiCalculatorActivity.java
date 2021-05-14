@@ -60,7 +60,7 @@ public class BmiCalculatorActivity extends AppCompatActivity
         calculateButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v) // this method  shows toast messages for a user to see and shows the double value of the strings
+            public void onClick(View v) // this method shows toast messages for a user to see and shows the double value of the strings
             {
                 if(inMetricUnits) {
                     if (weightKgEditText.length() == 0 || heightCmEditText.length() == 0) {
