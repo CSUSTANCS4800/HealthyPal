@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Alejandro Pulido
-creation on 4/22/21 and last updated on 4/25/21-->
+creation on 4/22/21 and last updated on 5/13/21-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,15 +16,18 @@ creation on 4/22/21 and last updated on 4/25/21-->
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text = "@string/bmi_calculator"
+        android:background="@drawable/cardbackground"
+        android:padding="5dp"
         android:textSize="32sp"/>
 
     <ToggleButton
         android:id="@+id/toggle_units_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/gradStart"
         android:checked="true"
-        android:textOff= "@string/imperial_units"
-        android:textOn= "@string/metric_units" />
+        android:textOff="@string/imperial_units"
+        android:textOn="@string/metric_units" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,6 +38,7 @@ creation on 4/22/21 and last updated on 4/25/21-->
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:background="@drawable/cardbackground"
             android:layout_gravity="center_vertical">
 
             <TextView
@@ -95,12 +99,12 @@ creation on 4/22/21 and last updated on 4/25/21-->
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center_vertical">
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/cardbackground">
 
         <TextView
             android:id="@+id/weight_label"
@@ -135,18 +139,19 @@ creation on 4/22/21 and last updated on 4/25/21-->
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/gradStart"
             android:text="@string/calculate"/>
     </LinearLayout>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_margin="6dp"
         android:id="@+id/results"
+        android:layout_width="385dp"
+        android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="6dp"
         android:gravity="center"
-        android:textSize="32sp"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:textSize="32sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -155,8 +160,8 @@ creation on 4/22/21 and last updated on 4/25/21-->
         android:gravity="center"
         android:id="@+id/category"
         android:textSize="30sp"
+        android:background="@drawable/cardbackground"
         android:textColor="#008000"/>
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -164,6 +169,6 @@ creation on 4/22/21 and last updated on 4/25/21-->
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:text="@string/bmi"
-        android:textSize="24sp"/>
+        android:textSize="24sp" />
 
 </LinearLayout>

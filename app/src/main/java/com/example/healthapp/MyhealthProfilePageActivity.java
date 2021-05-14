@@ -15,7 +15,7 @@ public class MyhealthProfilePageActivity extends AppCompatActivity {
     private Button BMI_Calculator_Button;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) // UI for the Profile page but has the code for the button that takes you to BMI Calculator
+    protected void onCreate(Bundle savedInstanceState) // this code is for the Profile page, having a button that takes you to the BMI Calculator
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myhealth_profile_page);
@@ -24,7 +24,7 @@ public class MyhealthProfilePageActivity extends AppCompatActivity {
         BMI_Calculator_Button.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View v)// onClick to know what openmyheathpage method will be opening
+            public void onClick(View v)// onClick to know what openmyhealthpage method will be opening
             {
                 openmyhealthpage();
             }
@@ -32,8 +32,8 @@ public class MyhealthProfilePageActivity extends AppCompatActivity {
 
     }
 
-    public void openmyhealthpage()// Method to open the BmiCalculatorActivity (BMI Calculator Page), it does the intent to start BmiCalculatorActivity (BMI Calculator Page)
-                                    //when the BMI Calculator button is clicked
+    public void openmyhealthpage()// Method to open the BmiCalculatorActivity, it does intent to start opening to the BmiCalculatorActivity (BMI Calculator)
+                                    //when the BMI Calculator button is clicked you will move from MyHealth Profile to BMI Calculator
     {
         Intent intent = new Intent(this, BmiCalculatorActivity.class);
         startActivity(intent);
