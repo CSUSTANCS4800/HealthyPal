@@ -20,9 +20,9 @@ public class Health
             return instance;
     }
 
-    public double calculateBMIMetric(double heightCm, double weightKg) //// math formula from find BMI value in Metric units
+    public double calculateBMIMetric(double heightCm, double weightKg) // math formula from find BMI value in Metric units, multiplying 100 *100 for cm to m conversion
     {
-        return (weightKg / ((heightCm) * (heightCm)));
+        return (100 * 100 * weightKg / ((heightCm) * (heightCm)));
     }
 
     public double calculateBMIImperial(double height_feet, double height_inches, double weight_lbs) // math formula from find BMI value in Imperial units
@@ -30,7 +30,7 @@ public class Health
         double totalHeightInInches = (height_feet * INCHES_IN_FOOT) + height_inches;
         return (BMI_IMPERIAL_WEIGHT_SCALAR * weight_lbs) / (totalHeightInInches * totalHeightInInches);
     }
-        public String bmiGroup(double bmi) // BMI vaule that determines which BMI catagory user belongs to.
+        public String bmiGroup(double bmi) // BMI value that determines which BMI category user belongs to.
         {
             if (bmi < 18.5) {
                 return BMI_CATEGORY_UNDERWEIGHT;

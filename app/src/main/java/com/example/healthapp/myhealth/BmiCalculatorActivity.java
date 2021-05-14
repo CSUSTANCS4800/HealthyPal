@@ -10,7 +10,6 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import com.example.healthapp.R;
 
@@ -22,9 +21,9 @@ import static com.example.healthapp.myhealth.Health.BMI_CATEGORY_OVERWEIGHT;
 import static com.example.healthapp.myhealth.Health.BMI_CATEGORY_UNDERWEIGHT;
 
 // Alejandro Pulido
-// created on 4/22/21 and last updated on 4/25/21
+// created on 4/22/21 and last updated on 5/13/21
 
-public class MyhealthpageActivity extends AppCompatActivity
+public class BmiCalculatorActivity extends AppCompatActivity
 {
     private EditText weightKgEditText, heightCmEditText;
     private EditText weightLbsEditText, heightFtEditText, heightInEditText;
@@ -36,7 +35,7 @@ public class MyhealthpageActivity extends AppCompatActivity
     private boolean inMetricUnits;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
+    protected void onCreate(Bundle savedInstanceState)// connected to the ID of the BMI Calculator
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myhealthpage);
@@ -57,15 +56,15 @@ public class MyhealthpageActivity extends AppCompatActivity
         inMetricUnits = true;
 
         bmiResultCardView.setVisibility(View.GONE);
-        updateInputsVisibility();
+        updateInputsVisibility(inMetricUnits);
         calculateButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v) // this method  shows toast mesages for a user to see and shows the double value of the strings
+            public void onClick(View v) // this method  shows toast messages for a user to see and shows the double value of the strings
             {
                 if(inMetricUnits) {
                     if (weightKgEditText.length() == 0 || heightCmEditText.length() == 0) {
-                        Toast.makeText(MyhealthpageActivity.this, "Insert your Weight and Height to Calculate BMI", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(BmiCalculatorActivity.this, "Insert your Weight and Height to Calculate BMI", Toast.LENGTH_SHORT).show();
                     } else {
                         double heightInCms = Double.parseDouble(heightCmEditText.getText().toString());
                         double weightInKgs = Double.parseDouble(weightKgEditText.getText().toString());
@@ -76,7 +75,7 @@ public class MyhealthpageActivity extends AppCompatActivity
                         {
                             if (weightLbsEditText.length() == 0 || heightFtEditText.length() == 0 || heightInEditText.length() == 0)
                             {
-                                Toast.makeText(MyhealthpageActivity.this, "Insert your Weight and Height to Calculate BMI", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(BmiCalculatorActivity.this, "Insert your Weight and Height to Calculate BMI", Toast.LENGTH_SHORT).show();
                         }else
                             {
                                 double heightFeet = Double.parseDouble(heightFtEditText.getText().toString());
@@ -93,11 +92,11 @@ public class MyhealthpageActivity extends AppCompatActivity
 
         toggleUnitsButton.setOnClickListener((View v) -> { // toggle button to show what card view show up depending if you use imperial or metric units
             inMetricUnits = !inMetricUnits;
-            updateInputsVisibility();
+            updateInputsVisibility(inMetricUnits);
         });
     }
 
-    private void updateInputsVisibility() // Visiablity of what Textview should be displayed on the BMI Calculator
+    private void updateInputsVisibility(boolean inMetricUnits) // Visibility of what Textview should be displayed on the BMI Calculator
     {
         if (inMetricUnits) {
             heightCmEditText.setVisibility(View.VISIBLE);
@@ -114,7 +113,7 @@ public class MyhealthpageActivity extends AppCompatActivity
         }
     }
 
-    private void displayBMI(double bmi)// displays the BMI value and the color background
+    private void displayBMI(double bmi)// displays the BMI value and the color background and the decimal format for the BMI value
     {
         bmiResultCardView.setVisibility(View.VISIBLE);
         DecimalFormat df = new DecimalFormat("###.##");
@@ -126,7 +125,7 @@ public class MyhealthpageActivity extends AppCompatActivity
         String BMI_Category = Health.getInstance().bmiGroup(bmi);
         categoryTextView.setText(BMI_Category);
 
-        switch (BMI_Category)// this will show what values are determined to have a certain color depending on the BMI Category
+        switch (BMI_Category)// this will assign appropriate color backgrounds depending on the user BMI value category
         {
             case BMI_CATEGORY_UNDERWEIGHT:
                 bmiResultCardView.setBackgroundColor(Color.BLUE);

@@ -8,7 +8,7 @@ creation on 4/22/21 and last updated on 4/25/21-->
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".myhealth.MyhealthpageActivity"
+    tools:context=".myhealth.BmiCalculatorActivity"
     android:padding="10dp">
 
     <TextView

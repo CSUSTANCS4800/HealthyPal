@@ -9,10 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthApp">
-        <activity android:name=".my_health_profile"></activity>
-        <activity android:name=".myhealth.MyhealthpageActivity" />
+        <activity android:name=".myhealth.BmiCalculatorActivity"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name="MyhealthProfilePageActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.HealthApp.NoActionBar">
             <intent-filter>
