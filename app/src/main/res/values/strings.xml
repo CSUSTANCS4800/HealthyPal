@@ -11,6 +11,22 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="mainlogo">Mainlogo</string>
+    <string name="ft">ft</string>
+    <string name="in">in</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="imperial_units">Imperial Units</string>
+    <string name="metric_units">Metric Units</string>
+    <string name="height">Height</string>
+    <string name="cm">cm</string>
+    <string name="weight">Weight</string>
+    <string name="kg">kg</string>
+    <string name="lbs">lbs</string>
+    <string name="calculate">Calculate</string>
+    <string name="bmi">BMI</string>
+    <string-array name="mass_array">
+        <item>kg</item>
+        <item>lbs</item>
+    </string-array>
 
     <string name="back4app_server_url">https://parseapi.back4app.com/</string>
     <string name="back4app_app_id">YOUR_APP_ID</string>

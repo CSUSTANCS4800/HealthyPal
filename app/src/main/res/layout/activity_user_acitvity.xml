@@ -28,4 +28,11 @@
         android:layout_height="wrap_content"
         android:text="Scheduler" />
 
+    <Button
+        android:id="@+id/btnMyHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnSchedule"
+        android:text="My Health" />
+
 </RelativeLayout>

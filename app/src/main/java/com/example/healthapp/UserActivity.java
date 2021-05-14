@@ -18,6 +18,8 @@ public class UserActivity extends AppCompatActivity {
     Button logoutButton;
     TextView welcomeTextView;
 
+    private Button btnMyHealth;
+
     private Button btnSchedule;
 
     @Override
@@ -27,11 +29,22 @@ public class UserActivity extends AppCompatActivity {
         // Connected the XML to the newly created button -Moises
         btnSchedule = findViewById(R.id.btnSchedule);
 
+        // Connected XML to the newly created myHealth button -Moises
+        btnMyHealth = findViewById(R.id.btnMyHealth);
+
         // Click listener to move from main layout to scheduling functionality -Moises
         btnSchedule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(UserActivity.this,scheduling.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMyHealth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserActivity.this, MyhealthProfilePageActivity.class);
                 startActivity(intent);
             }
         });
