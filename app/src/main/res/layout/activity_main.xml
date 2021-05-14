@@ -11,33 +11,26 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:gravity="center"
     tools:context=".MainActivity">
 
-<<<<<<< HEAD
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/healthypal_logo"
         android:contentDescription="@string/mainlogo" />
-=======
-<ImageView
-    android:layout_width="150dp"
-    android:layout_height="150dp"
-    android:src="@drawable/healthypal"/>
->>>>>>> d665047e38165c68bbfada161222c026b2d5d6e2
 
-<LinearLayout
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:padding="10dp"
-android:gravity="center"
-android:layout_marginTop="30dp"
-android:background="@drawable/round_edittext" >
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/round_edittext" >
 
-
-<ImageView
+    <ImageView
     android:layout_width="50dp"
     android:layout_height="wrap_content"
     android:src="@drawable/ic_baseline_person_24" />
-<EditText
+
+    <EditText
     android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:id="@+id/et_username"
@@ -47,20 +40,21 @@ android:background="@drawable/round_edittext" >
     android:background="@android:color/transparent"
     />
 
-</LinearLayout>
-<LinearLayout
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:padding="10dp"
-android:gravity="center"
-android:layout_marginTop="10dp"
-android:background="@drawable/round_edittext">
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/round_edittext">
 
-<ImageView
+    <ImageView
     android:layout_width="50dp"
     android:layout_height="wrap_content"
     android:src="@drawable/ic_baseline_lock_24" />
-<EditText
+
+    <EditText
     android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:id="@+id/et_password"
@@ -68,27 +62,27 @@ android:background="@drawable/round_edittext">
     android:textColorHint="@android:color/white"
     android:background="@android:color/transparent"/>
 
-</LinearLayout>
-
-<Button
-android:id="@+id/bt_submit"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginTop="30dp"
-android:background="@drawable/round_button"
-android:text="submit"
-android:textColor="@android:color/white"
-app:backgroundTint="#4CAF50" />
-
-<Button
-android:id="@+id/bt_signUpButton"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginTop="30dp"
-android:background="@drawable/round_button"
-android:text="Sign Up"
-android:textColor="@android:color/white"
-app:backgroundTint="#4CAF50" />
-
     </LinearLayout>
+
+    <Button
+    android:id="@+id/bt_submit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/round_button"
+    android:text="submit"
+    android:textColor="@android:color/white"
+    app:backgroundTint="#4CAF50" />
+
+    <Button
+    android:id="@+id/bt_signUpButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/round_button"
+    android:text="Sign Up"
+    android:textColor="@android:color/white"
+    app:backgroundTint="#4CAF50" />
+
+</LinearLayout>
 

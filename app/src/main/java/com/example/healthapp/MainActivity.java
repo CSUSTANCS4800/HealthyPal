@@ -18,6 +18,24 @@ import com.parse.SignUpCallback;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Declaring views -Moises
+//    EditText title;
+//    EditText location;
+//    EditText description;
+//    Button addEvent;
+
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_scheduling);
+//
+//        title = findViewById(R.id.etTitle);
+//        location = findViewById(R.id.etLocation);
+//        description = findViewById(R.id.etDescription);
+//        addEvent = findViewById(R.id.btnAdd);
+//    }
+
+
     EditText usernameEditText;
     EditText passwordEditText;
     Button loginButton;
@@ -25,6 +43,28 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Adding new code for scheduling -Moises
+//        setContentView(R.layout.activity_scheduling);
+//
+//        title = findViewById(R.id.etTitle);
+//        location = findViewById(R.id.etLocation);
+//        description = findViewById(R.id.etDescription);
+//        addEvent = findViewById(R.id.btnAdd);
+//
+//        addEvent.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!title.getText().toString().isEmpty() && !location.getText().toString().isEmpty()
+//                    && !description.getText().toString().isEmpty()) {
+//                } else {
+//                    Toast.makeText(MainActivity.this, "Please fill all the fields",
+//                            Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        });
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //ParseInstallation.getCurrentInstallation().saveInBackground();
