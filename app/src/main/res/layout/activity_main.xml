@@ -65,24 +65,32 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </LinearLayout>
 
     <Button
-    android:id="@+id/bt_submit"
+    android:id="@+id/bt_login"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="30dp"
     android:background="@drawable/round_button"
-    android:text="submit"
+    android:text="Login"
     android:textColor="@android:color/white"
     app:backgroundTint="#4CAF50" />
 
-    <Button
-    android:id="@+id/bt_signUpButton"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="30dp"
-    android:background="@drawable/round_button"
-    android:text="Sign Up"
-    android:textColor="@android:color/white"
-    app:backgroundTint="#4CAF50" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="You haven't an account yet?"
+        android:layout_marginBottom="10dp"
+        android:onClick="signup"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Forgot your password?"
+        android:onClick="forgotPassword"/>
+
+
+
 
 </LinearLayout>
 
