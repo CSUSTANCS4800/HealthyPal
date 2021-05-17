@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.provider.CalendarContract;
 
 
 import com.parse.ParseUser;
@@ -50,7 +49,7 @@ public class UserActivity extends AppCompatActivity {
         });
 
 
-        logoutButton=findViewById(R.id.logoutButton);
+        logoutButton=findViewById(R.id.dashboard);
         welcomeTextView=findViewById(R.id.welcomeTextView);
         String welcomeMessage="Welcome "+ ParseUser.getCurrentUser().getUsername();
         welcomeTextView.setText(welcomeMessage);
