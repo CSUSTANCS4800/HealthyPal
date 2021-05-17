@@ -24,7 +24,7 @@
         android:theme="@style/Theme.HealthApp">
         <activity android:name=".ResetPasswordActivity"></activity>
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".UserActivity" />
+        <activity android:name=".Dashboard" />
         <activity android:name=".scheduling" />
         <activity android:name=".myhealth.BmiCalculatorActivity" />
         <activity android:name=".MyhealthProfilePageActivity" />

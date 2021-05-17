@@ -46,15 +46,6 @@
                 android:textSize="32sp"
                 android:textColor="@color/white"/>
 
-            <Button
-                android:id="@+id/BMI_Calculator_Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_corners"
-                android:backgroundTint="@color/gradStart"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:text="BMI Calculator" />
 
         </RelativeLayout>
 
@@ -117,8 +108,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Current BMI Value"
-                    android:textColor="@color/headings"
-                    android:textSize="15sp"/>
+                    android:textColor="#4CAF50"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -147,8 +138,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Height"
-                    android:textColor="@color/headings"
-                    android:textSize="15sp"/>
+                    android:textColor="#4CAF50"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -177,8 +168,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Weight"
-                    android:textColor="@color/headings"
-                    android:textSize="15sp"/>
+                    android:textColor="#4CAF50"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -207,8 +198,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Gender"
-                    android:textColor="@color/headings"
-                    android:textSize="15sp"/>
+                    android:textColor="#4CAF50"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -237,8 +228,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Previous BMI"
-                    android:textColor="@color/headings"
-                    android:textSize="15sp"/>
+                    android:textColor="#4CAF50"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="wrap_content"

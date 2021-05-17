@@ -4,36 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserActivity">
+    tools:context=".Dashboard">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
         android:text="Dashboard"
+        android:textColor="#4CAF50"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_margin="12dp"/>
+        android:textStyle="bold" />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/textView"
-        android:layout_marginTop="20dp"
         android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
         android:columnCount="2"
         android:rowCount="3">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
             android:layout_row="0"
+            android:layout_rowWeight="1"
             android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             app:cardCornerRadius="8dp"
+
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
 
@@ -42,20 +48,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center">
+
                 <Button
                     android:id="@+id/btnMyHealth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/btnMyHealth"
-                    android:text="My Health" />
-                    />
+                    android:text="My Health"
+                    android:background="@drawable/round_button_2"
+                    android:backgroundTint="#4CAF50"/>
 
 
             </LinearLayout>
-
-
-
-
 
 
         </androidx.cardview.widget.CardView>
@@ -63,11 +67,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
             android:layout_row="0"
+            android:layout_rowWeight="1"
             android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -77,24 +81,21 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
+
                 <Button
                     android:id="@+id/btnSchedule"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Scheduler" />
-
-
-
+                    android:text="Scheduler"
+                    android:background="@drawable/round_button_2"
+                    android:backgroundTint="#4CAF50"/>
 
 
             </LinearLayout>
-
-
-
-
 
 
         </androidx.cardview.widget.CardView>
@@ -102,11 +103,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
             android:layout_row="1"
+            android:layout_rowWeight="1"
             android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -118,38 +119,53 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/logoutButton"
+                    android:id="@+id/BMI_Calculator_Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
-                    android:text="@string/logout"/>
-
-
-
-
-
+                    android:background="@drawable/round_button_2"
+                    android:backgroundTint="#4CAF50"
+                    android:text="BMI" />
 
 
             </LinearLayout>
 
 
+        </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center">
 
+                <Button
+                    android:id="@+id/logotbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/round_button_2"
+                    android:backgroundTint="#4CAF50"
+                    android:text="Logout" />
+
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
 
-
-
-
-
-
-
-
     </GridLayout>
-
 
 
 </RelativeLayout>

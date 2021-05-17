@@ -24,7 +24,8 @@ creation on 4/22/21 and last updated on 5/13/21-->
         android:id="@+id/toggle_units_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/gradStart"
+        android:background="@drawable/round_button_2"
+        android:backgroundTint="#4CAF50"
         android:checked="true"
         android:textOff="@string/imperial_units"
         android:textOn="@string/metric_units" />
@@ -139,7 +140,8 @@ creation on 4/22/21 and last updated on 5/13/21-->
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/gradStart"
+            android:background="@drawable/round_button_2"
+            android:backgroundTint="#4CAF50"
             android:text="@string/calculate"/>
     </LinearLayout>
 

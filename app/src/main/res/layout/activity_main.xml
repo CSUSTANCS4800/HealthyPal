@@ -65,14 +65,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </LinearLayout>
 
     <Button
-    android:id="@+id/bt_login"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="30dp"
-    android:background="@drawable/round_button"
-    android:text="Login"
-    android:textColor="@android:color/white"
-    app:backgroundTint="#4CAF50" />
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button_2"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#4CAF50" />
 
     <TextView
         android:layout_width="match_parent"
