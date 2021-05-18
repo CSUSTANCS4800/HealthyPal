@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Alejandro Pulido
 creation on 4/22/21 and last updated on 5/13/21-->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<!--Updated by Brendan Contreras on 5/17/21-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#303030"
     android:orientation="vertical"
-    tools:context=".myhealth.BmiCalculatorActivity"
-    android:padding="10dp">
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".myhealth.BmiCalculatorActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text = "@string/bmi_calculator"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/cardbackground"
         android:padding="5dp"
-        android:textSize="32sp"/>
+        android:text="@string/bmi_calculator"
+        android:textSize="32sp" />
 
     <ToggleButton
         android:id="@+id/toggle_units_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_button_2"
-        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="10dp"
+        android:background="#2D7E88"
         android:checked="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#EDEDED"
+        android:textColorHighlight="#00C31313"
+        android:textColorHint="#00FFFFFF"
+        android:textColorLink="#00A61A1A"
         android:textOff="@string/imperial_units"
         android:textOn="@string/metric_units" />
 
@@ -38,9 +47,11 @@ creation on 4/22/21 and last updated on 5/13/21-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
             android:background="@drawable/cardbackground"
-            android:layout_gravity="center_vertical">
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
 
             <TextView
                 android:id="@+id/height_label"
@@ -48,17 +59,17 @@ creation on 4/22/21 and last updated on 5/13/21-->
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="@string/height"
-                android:textSize="24sp"/>
+                android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/height_cm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="3"
-                android:inputType="numberDecimal"
                 android:layout_gravity="center_horizontal"
+                android:ems="3"
                 android:gravity="center_horizontal"
-                android:hint="@string/cm"/>
+                android:hint="@string/cm"
+                android:inputType="numberDecimal" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -71,29 +82,29 @@ creation on 4/22/21 and last updated on 5/13/21-->
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_toStartOf="@+id/mid_view"
+                    android:layout_toLeftOf="@+id/mid_view"
                     android:ems="3"
                     android:gravity="center_horizontal"
                     android:hint="@string/ft"
-                    android:layout_toLeftOf="@+id/mid_view"
-                    android:inputType="numberDecimal"
-                    android:layout_toStartOf="@+id/mid_view"/>
+                    android:inputType="numberDecimal" />
 
                 <View
                     android:id="@+id/mid_view"
                     android:layout_width="10dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_height="0dp" />
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true" />
 
                 <EditText
                     android:id="@+id/height_inches"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
+                    android:layout_toEndOf="@id/mid_view"
                     android:layout_toRightOf="@id/mid_view"
                     android:ems="3"
+                    android:gravity="center_horizontal"
                     android:hint="@string/in"
-                    android:inputType="numberDecimal"
-                    android:layout_toEndOf="@id/mid_view" />
+                    android:inputType="numberDecimal" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -103,9 +114,11 @@ creation on 4/22/21 and last updated on 5/13/21-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_gravity="center_vertical"
-        android:background="@drawable/cardbackground">
+        android:background="@drawable/cardbackground"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
 
         <TextView
             android:id="@+id/weight_label"
@@ -113,36 +126,38 @@ creation on 4/22/21 and last updated on 5/13/21-->
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="@string/weight"
-            android:textSize="24sp"/>
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/weight_kgs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="3"
-            android:inputType="numberDecimal"
             android:layout_gravity="center_horizontal"
+            android:ems="3"
             android:gravity="center_horizontal"
-            android:hint="@string/kg"/>
+            android:hint="@string/kg"
+            android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/weight_lbs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="3"
-            android:inputType="numberDecimal"
             android:layout_gravity="center_horizontal"
+            android:ems="3"
             android:gravity="center_horizontal"
-            android:hint="@string/lbs"/>
+            android:hint="@string/lbs"
+            android:inputType="numberDecimal" />
 
         <Button
             android:id="@+id/calculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/round_button_2"
-            android:backgroundTint="#4CAF50"
-            android:text="@string/calculate"/>
+            android:background="#2D7E88"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/calculate"
+            android:textColor="#EDEDED" />
     </LinearLayout>
 
     <TextView
@@ -156,14 +171,14 @@ creation on 4/22/21 and last updated on 5/13/21-->
         android:textSize="32sp" />
 
     <TextView
+        android:id="@+id/category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:id="@+id/category"
-        android:textSize="30sp"
         android:background="@drawable/cardbackground"
-        android:textColor="#008000"/>
+        android:gravity="center"
+        android:textColor="#008000"
+        android:textSize="30sp" />
 
     <TextView
         android:layout_width="wrap_content"
