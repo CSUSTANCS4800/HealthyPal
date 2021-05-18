@@ -72,12 +72,12 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </LinearLayout>
 
     <Button
-        android:id="@+id/bt_submit"
+        android:id="@+id/bt_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@drawable/round_button"
-        android:text="submit"
+        android:text="Login"
         android:textColor="#EDEDED"
         app:backgroundTint="#2D7E88" />
 
