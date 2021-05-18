@@ -15,6 +15,7 @@ import com.parse.RequestPasswordResetCallback;
 
 public class ResetPasswordActivity extends AppCompatActivity {
 
+    // this is the reset password screen, and it sends a email to your email -Samir
     EditText edEmail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,6 @@ public class ResetPasswordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_reset_password);
         edEmail = findViewById(R.id.edEmail);
     }
-
     public void resetPassword(View view) {
         if( TextUtils.isEmpty(edEmail.getText())){
             edEmail.setError( "Email is required!" );

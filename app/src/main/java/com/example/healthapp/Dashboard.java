@@ -43,7 +43,7 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        // Click Listener for my health section -Samir
         btnMyHealth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,7 +53,7 @@ public class Dashboard extends AppCompatActivity {
         });
 
 
-
+        // Click Listener for logout section -Samir
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,7 +63,7 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
-
+        // Click Listener for bmi calulator section -Samir
         btnBMI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

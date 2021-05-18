@@ -16,6 +16,7 @@ import com.parse.SignUpCallback;
 
 public class SignUpActivity extends AppCompatActivity {
 
+    //setting up text views -Samir
     EditText edName, edEmail, edPassword, edConfirmPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class SignUpActivity extends AppCompatActivity {
         edPassword = findViewById(R.id.edPassword);
         edConfirmPassword = findViewById(R.id.edConfirmPassword);
     }
-
+    //setting up test cases -Samir
     public void signup(View view) {
         if( TextUtils.isEmpty(edName.getText())){
             edName.setError( "Name is required!" );
@@ -41,6 +42,7 @@ public class SignUpActivity extends AppCompatActivity {
             Toast.makeText(SignUpActivity.this, "Passwords are not the same!", Toast.LENGTH_LONG).show();
         }else{
 
+            //saves your infomation in the data base.
             final ProgressDialog progress = new ProgressDialog(this);
             progress.setMessage("Loading ...");
             progress.show();
