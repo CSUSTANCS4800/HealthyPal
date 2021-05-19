@@ -22,6 +22,11 @@ import static com.example.healthapp.myhealth.Health.BMI_CATEGORY_UNDERWEIGHT;
 
 // Alejandro Pulido
 // created on 4/22/21 and last updated on 5/13/21
+// written by: Alex
+// tested by: Alex
+// debugged by: Alex
+
+
 
 public class BmiCalculatorActivity extends AppCompatActivity
 {
@@ -143,6 +148,3 @@ public class BmiCalculatorActivity extends AppCompatActivity
     }
 }
 
-// written by: Alex
-// tested by: Alex
-// debugged by: Alex

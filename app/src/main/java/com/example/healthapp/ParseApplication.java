@@ -1,3 +1,7 @@
+// written by: Samir
+// tested by: Samir
+// debugged by: Samir
+
 package com.example.healthapp;
 
 import com.parse.Parse;
@@ -19,6 +23,3 @@ public class ParseApplication extends Application {
     }
 }
 
-// written by: Samir
-// tested by: Samir
-// debugged by: Samir

@@ -1,3 +1,9 @@
+// written by: Alex
+// tested by: Alex
+// debugged by: Alex
+
+
+
 package com.example.healthapp;
 
 import android.os.Bundle;
@@ -24,6 +30,3 @@ public class MyhealthProfilePageActivity extends AppCompatActivity {
     }
 }
 
-// written by: Alex
-// tested by: Alex
-// debugged by: Alex

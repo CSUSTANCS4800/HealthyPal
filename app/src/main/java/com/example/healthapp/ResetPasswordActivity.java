@@ -1,3 +1,8 @@
+// written by: Samir
+// tested by: Samir
+// debugged by: Samir
+
+
 package com.example.healthapp;
 
 
@@ -42,6 +47,3 @@ public class ResetPasswordActivity extends AppCompatActivity {
     }
 }
 
-// written by: Samir
-// tested by: Samir
-// debugged by: Samir

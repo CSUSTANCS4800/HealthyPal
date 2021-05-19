@@ -1,3 +1,9 @@
+// written by: Moises, Samir
+// tested by: Moises, Samir
+// debugged by: Moises, Samir
+
+
+
 package com.example.healthapp;
 
 import android.content.Intent;
@@ -110,6 +116,3 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-// written by: Moises, Samir
-// tested by: Moises, Samir
-// debugged by: Moises, Samir
