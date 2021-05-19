@@ -2,6 +2,9 @@ package com.example.healthapp.myhealth;
 
 //Alejandro Pulido
 // created on 4/22/21 and last updated on 5/13/21
+// written by: Alex
+// tested by: Alex
+// debugged by: Alex
 
 public class Health
 {
@@ -46,3 +49,4 @@ public class Health
 
 
 }
+

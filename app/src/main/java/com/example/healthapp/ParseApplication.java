@@ -1,3 +1,7 @@
+// written by: Samir
+// tested by: Samir
+// debugged by: Samir
+
 package com.example.healthapp;
 
 import com.parse.Parse;
@@ -5,7 +9,7 @@ import android.app.Application;
 
 public class ParseApplication extends Application {
 
-    // Initializes Parse SDK as soon as the application is created
+    // Initializes Parse SDK as soon as the application is created -samir
     @Override
     public void onCreate() {
         super.onCreate();
@@ -18,3 +22,4 @@ public class ParseApplication extends Application {
         );
     }
 }
+

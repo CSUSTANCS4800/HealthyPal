@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--Originally designed by Moises Ortega-Garcia
+Updated by Brendan Contreras on 5/17/21-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#303030"
     tools:context=".scheduling">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cardbackground"
+        android:padding="5dp"
         android:text="Event form"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -44,6 +55,7 @@
         android:id="@+id/etDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Description"
         android:inputType="text"
@@ -56,9 +68,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="@drawable/round_button_2"
-        android:backgroundTint="#4CAF50"
+        android:background="#2D7E88"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:text="Add Reminder"
+        android:textColor="#EDEDED"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etDescription" />

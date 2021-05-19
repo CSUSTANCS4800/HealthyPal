@@ -1,3 +1,9 @@
+// written by: Moises, Samir
+// tested by: Moises, Samir
+// debugged by: Moises, Samir
+
+
+
 package com.example.healthapp;
 
 import android.content.Intent;
@@ -93,19 +99,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+    //When logging in it sends you to dashboard -samir
     private void startUserActivity() {
        Intent intent = new Intent(MainActivity.this, Dashboard.class);
         startActivity(intent);
     }
-
+    //When clikcing "Sign up" sends you Sign Up activity -samir
     public void signup(View view) {
         Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
         startActivity(intent);
     }
-
+    //When clikcing "forgot password" sends you resetpassword activity -samir
     public void forgotPassword(View view) {
         Intent intent = new Intent(MainActivity.this, ResetPasswordActivity.class);
         startActivity(intent);
     }
 }
+

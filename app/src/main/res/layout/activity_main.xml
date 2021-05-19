@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Originally designed by Samir Espinosa
+Updated by Brendan Contreras of 5/17/21-->
+
 <LinearLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
 
@@ -7,23 +10,25 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#303030"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
+
+<ImageView
         android:layout_width="210dp"
         android:layout_height="200dp"
         android:background="@drawable/transparent_healthypal_logo"
         android:contentDescription="@string/mainlogo" />
 
     <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:gravity="center"
-    android:layout_marginTop="30dp"
-    android:background="@drawable/round_edittext" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/cardbackground"
+        android:gravity="center"
+        android:padding="10dp">
 
     <ImageView
     android:layout_width="50dp"
@@ -31,23 +36,23 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:src="@drawable/ic_baseline_person_24" />
 
     <EditText
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:id="@+id/et_username"
-    android:hint="Enter Username"
-    android:textColor="@android:color/white"
-    android:textColorHint="@android:color/white"
-    android:background="@android:color/transparent"
-    />
+        android:id="@+id/et_username"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="Enter Username"
+        android:textColor="#EDEDED"
+        android:textColorHint="#74EDEDED" />
+
 
     </LinearLayout>
     <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:gravity="center"
-    android:layout_marginTop="10dp"
-    android:background="@drawable/round_edittext">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cardbackground"
+        android:gravity="center"
+        android:padding="10dp">
 
     <ImageView
     android:layout_width="50dp"
@@ -55,12 +60,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:src="@drawable/ic_baseline_lock_24" />
 
     <EditText
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:id="@+id/et_password"
-    android:hint="Enter Password"
-    android:textColorHint="@android:color/white"
-    android:background="@android:color/transparent"/>
+        android:id="@+id/et_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="Enter Password"
+        android:textColor="#EDEDED"
+        android:textColorHint="#74EDEDED" />
+
 
     </LinearLayout>
 
@@ -68,11 +75,12 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/bt_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/round_button_2"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button"
         android:text="Login"
-        android:textColor="@android:color/white"
-        app:backgroundTint="#4CAF50" />
+        android:textColor="#EDEDED"
+        app:backgroundTint="#2D7E88" />
+
 
     <TextView
         android:layout_width="match_parent"

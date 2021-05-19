@@ -1,3 +1,8 @@
+// written by: Moises
+// tested by: Moises
+// debugged by: Moises
+
+
 package com.example.healthapp;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -65,3 +70,4 @@ public class scheduling extends AppCompatActivity {
 
     }
 }
+
