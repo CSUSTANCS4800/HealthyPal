@@ -142,3 +142,7 @@ public class BmiCalculatorActivity extends AppCompatActivity
         }
     }
 }
+
+// written by: Alex
+// tested by: Alex
+// debugged by: Alex

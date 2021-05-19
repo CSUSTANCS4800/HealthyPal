@@ -109,3 +109,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 }
+
+// written by: Moises, Samir
+// tested by: Moises, Samir
+// debugged by: Moises, Samir

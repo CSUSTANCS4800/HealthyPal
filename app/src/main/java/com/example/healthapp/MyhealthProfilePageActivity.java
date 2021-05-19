@@ -23,3 +23,7 @@ public class MyhealthProfilePageActivity extends AppCompatActivity {
 
     }
 }
+
+// written by: Alex
+// tested by: Alex
+// debugged by: Alex
